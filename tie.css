@@ -1,0 +1,80 @@
+@keyframes tie{
+    from {transform: scale(1);opacity: 1;}
+    65% {transform: scale(0.4);opacity: 1;}
+    to {transform: scale(0);opacity: 1;}    
+}
+@-webkit-keyframes tie{
+    from {-webkit-transform: scale(1);opacity: 1;}
+    65% {-webkit-transform: scale(0.4);opacity: 1;}
+    to {-webkit-transform: scale(0);opacity: 1;}    
+}
+@-moz-keyframes tie{
+    from {-moz-transform: scale(1);opacity: 1;}
+    65% {-moz-transform: scale(0.4);opacity: 1;}
+    to {-moz-transform: scale(0);opacity: 1;}    
+}
+
+
+@-o-keyframes tie{
+    from {-o-transform: scale(1);opacity: 1}
+    65% {-o-transform: scale(0.4);opacity: 1}
+    to {-o-transform: scale(0);opacity: 1}    
+}
+
+/*
+@keyframes tie-move{
+    from {transform: translate(-60%,60%);}
+}
+@-webkit-keyframes tie-move{
+    from {-webkit-transform: translate(-60%,60%);}
+}
+
+@-moz-keyframes tie-move{
+    from {-moz-transform: translate(-60%,60%);}
+}
+
+@-o-keyframes tie-move{
+    from {-o-transform: translate(-60%,60%);}
+}
+*/
+
+@keyframes tie-move{
+    from {transform: translate(-350px,350px);}
+}
+@-webkit-keyframes tie-move{
+    from {-webkit-transform: translate(-350px,350px);} 
+}
+
+@-moz-keyframes tie-move{
+    from {-moz-transform: translate(-350px,350px);}  
+}
+@-o-keyframes tie-move{
+    from {-o-transform: translate(-350px,350px);} 
+}
+
+#tie {
+    background: url("img/tie-fighter.png") 0px 0px;
+    height: 240px;
+    width: 320px;
+    z-index: 900;
+    opacity: 0;
+
+  -webkit-animation: tie 5s linear;
+  -moz-animation: tie 5s linear;
+  -ms-animation: tie 5s linear;
+  -o-animation: tie 5s linear;
+  animation: tie 5s linear;
+}
+
+#tie-holder {
+    position: absolute;
+    top: -17px;
+    left: 330px;
+    z-index: 990;
+      -webkit-animation: tie-move 5s ease-out;
+  -moz-animation: tie-move 5s ease-out;
+  -ms-animation: tie-move 5s ease-out;
+  -o-animation: tie-move 5s ease-out;
+  animation: tie-move 5s ease-out;
+    
+}

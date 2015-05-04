@@ -1,0 +1,165 @@
+@keyframes scale{
+    from {transform: scale(0.2);}
+    65% {transform: scale(0.5);}
+    to {transform: scale(1);}    
+}
+@-webkit-keyframes scale{
+    from {-webkit-transform: scale(0.2);}
+    65% {-webkit-transform: scale(0.5);}
+    to {-webkit-transform: scale(1);}    
+}
+
+@-moz-keyframes scale{
+    from {-moz-transform: scale(0.2);}
+    65% {-moz-transform: scale(0.5);}
+    to {-moz-transform: scale(1);}    
+}
+@-o-keyframes scale{
+    from {-o-transform: scale(0.2);}
+    65% {-o-transform: scale(0.5);}
+    to {-o-transform: scale(1);}    
+}
+
+@keyframes rotate_ds {
+ 0% {
+    background-position: 0px -2px;
+ }
+ 25% {
+    background-position: 0px -2px;
+ }
+
+ 100% {
+    background-position: 410px -2px;
+ }
+
+}
+
+@-moz-keyframes rotate_ds {
+ 0% {
+   background-position: 0px -2px;
+ }
+ 25% {
+    background-position: 0px -2px;
+ }
+
+ 100% {
+   background-position: 205px -2px;
+ }
+
+}
+
+@-webkit-keyframes rotate_ds {
+ 0% {
+   background-position: 0px -2px;
+ }
+ 25% {
+    background-position: 0px -2px;
+ }
+ 100% {
+   background-position: 205px -2px;
+ }
+
+}
+
+@-o-keyframes rotate_ds {
+ 0% {
+   background-position: 0px -2px;
+ }
+
+ 50% {
+   background-position: 152px -2px;
+ }
+ 100% {
+   background-position: 205px -2px;
+ }
+
+}
+
+#overlay {
+    background-image: url("img/cockpit.png");
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    top:0;
+    left: 0;
+    
+}
+
+
+
+#ds_holder {
+  position: relative;
+  z-index: 1;
+  width: 200px;
+  height: 200px;
+  left: 400px;
+  border-radius: 200px;
+  margin-top: 11%;
+  -webkit-animation: scale 10s ease-in;
+  -moz-animation: scale 10s ease-in;
+  -ms-animation: scale 10s ease-in;
+  -o-animation: scale 10s ease-in;
+  animation: scale 10s ease-in;
+}
+
+body div#ds_holder div#ds {
+  z-index: 2;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  background: url("img/deathstar.jpg") -70px 0px;
+  background-position: 205px -2px;
+
+
+  -webkit-animation: rotate_ds 40s linear;
+  -moz-animation: rotate_ds 40s linear;
+  -ms-animation: rotate_ds 40s linear;
+  -o-animation: rotate_ds 40s linear;
+  animation: rotate_ds 40s linear;
+}
+
+
+body div#ds_holder div#ds_ball {
+  z-index: 3;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=74)";
+  filter: alpha(opacity=74);
+  opacity: 0.74;
+
+  -webkit-box-shadow: inset 40px -40px 80px #000, inset 20px -20px 100px #000;
+  box-shadow: inset 40px -40px 80px #000, inset 20px -20px 100px #000;
+}
+
+#center {
+    position: relative;
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

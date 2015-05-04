@@ -1,0 +1,153 @@
+@keyframes "rotate_earth" {
+ 0% {
+    background-position: 0px -2px;
+ }
+ 50% {
+    background-position: 410px -2px;
+ }
+ 100% {
+    background-position: 820px -2px;
+ }
+
+}
+
+@-moz-keyframes rotate_earth {
+ 0% {
+   background-position: 0px -2px;
+ }
+ 50% {
+   background-position: 410px -2px;
+ }
+ 100% {
+   background-position: 820px -2px;
+ }
+
+}
+
+@-webkit-keyframes "rotate_earth" {
+ 0% {
+   background-position: 0px -2px;
+ }
+ 50% {
+   background-position: 410px -2px;
+ }
+ 100% {
+   background-position: 820px -2px;
+ }
+
+}
+
+@-ms-keyframes "rotate_earth" {
+ 0% {
+   background-position: 0px -2px;
+ }
+ 50% {
+   background-position: 410px -2px;
+ }
+ 100% {
+   background-position: 820px -2px;
+ }
+
+}
+
+@-o-keyframes "rotate_earth" {
+ 0% {
+   background-position: 0px -2px;
+ }
+ 50% {
+   background-position: 410px -2px;
+ }
+ 100% {
+   background-position: 820px -2px;
+ }
+
+}
+
+@keyframes earth_scale{
+    from {transform: scale(0.8);}
+    65% {transform: scale(0.9);}
+    to {transform: scale(1);}    
+}
+@-webkit-keyframes earth_scale{
+    from {-webkit-transform: scale(0.8);}
+    65% {-webkit-transform: scale(0.9);}
+    to {-webkit-transform: scale(1);}    
+}
+@-ms-keyframes earth_scale{
+    from {-ms-transform: scale(0.8);}
+    65% {-ms-transform: scale(0.9);}
+    to {-ms-transform: scale(1);}    
+}
+
+@-moz-keyframes earth_scale{
+    from {-moz-transform: scale(0.8);}
+    65% {-moz-transform: scale(0.9);}
+    to {-moz-transform: scale(1);}    
+}
+@-o-keyframes earth_scale{
+    from {-o-transform: scale(0.8);}
+    65% {-o-transform: scale(0.9);}
+    to {-o-transform: scale(1);}    
+}
+
+
+#earth_holder {
+  position: absolute;
+  z-index: -1;
+  width: 400px;
+  height: 400px;
+  border-radius: 400px;
+  top: 10%;
+  right: 20%;
+  -webkit-animation: earth_scale 10s ease-in;
+  -moz-animation: earth_scale 10s ease-in;
+  -ms-animation: earth_scale 10s ease-in;
+  -o-animation: earth_scale 10s ease-in;
+  animation: earth_scale 10s ease-in;
+}
+
+body div#earth_holder div#earth {
+  z-index: 0;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 400px;
+  background: url("img/earth.jpg") 0px 0px;
+
+-moz-box-shadow: inset 1px -3px 14px rgba(0,0,0,0.60), inset 0 0 67px #000, inset 0 0 20px rgba(0,0,0,0.50), 0 0 130px rgba(0,0,0,0.50);
+  -webkit-box-shadow: inset 1px -3px 14px rgba(0,0,0,0.60), inset 0 0 67px #000, inset 0 0 20px rgba(0,0,0,0.50), 0 0 130px rgba(0,0,0,0.50);
+  box-shadow: inset 1px -3px 14px rgba(0,0,0,0.60), inset 0 0 67px #000, inset 0 0 20px rgba(0,0,0,0.50), 0 0 130px rgba(0,0,0,0.50);
+
+  -webkit-animation: rotate_earth 40s linear infinite;
+  -moz-animation: rotate_earth 40s linear infinite;
+  -ms-animation: rotate_earth 40s linear infinite;
+  -o-animation: rotate_earth 40s linear infinite;
+  animation: rotate_earth 40s linear infinite;
+}
+
+body div#earth_holder div#earth_glow {
+  z-index: 4;
+
+  -webkit-box-shadow: 0 0px 19px rgba(79,156,201,0.80);
+  box-shadow: 0 0px 19px rgba(79,156,201,0.80);
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 400px;
+}
+
+body div#earth_holder div#earth_ball {
+  z-index: 3;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 400px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=74)";
+  filter: alpha(opacity=74);
+  opacity: 0.74;
+
+  -webkit-box-shadow: inset 40px -40px 80px #000, inset 20px -20px 100px #000;
+  box-shadow: inset 40px -40px 80px #000, inset 20px -20px 100px #000;
+}
+
+

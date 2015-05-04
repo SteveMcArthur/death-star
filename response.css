@@ -1,0 +1,44 @@
+/*iPad land 1024, iPad port 768, nexus land 600, nexus port 384, android land 320, android port 240 */
+/*iPhone 6 land plump 736, iPhone 6 plump port 414, iPhone 6 land 667, iPhone 6 port 375 */
+/*iPhone 5 land 568, iPhone 5 port 320 */
+
+/*small 240, 320, 375, 384 */
+/*medium 414, 568, 600 */
+/*large 667, 736, 768 */
+/*big 1024, 1280 */
+/*very big 1600, 2560*/
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    #overlay {
+        background-position: -235px 0;
+        background-size: 100%;
+    }
+    #ds_holder {
+        left: 300px;
+    }
+    #earth_holder {
+        left:400px;
+    }
+    #tie-holder {
+        left:230px;
+    }
+
+} 
+
+@media only screen and (max-width: 480px) {
+    #overlay {
+        background-position: -170px 0px;
+        background-size: 100%;
+        
+    }
+    #ds_holder {
+        left: 300px;
+    }
+    #earth_holder {
+        left:400px;
+    }
+    #tie-holder {
+        left:230px;
+    }
+
+} 
